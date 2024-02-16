@@ -1,0 +1,3037 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This site serves as a personal knowledge base for me to record my thoughts and ideas. It is also a place for me to share my knowledge and experience with the world. I hope you find something useful here.">
+      
+      
+        <meta name="author" content="Suneann">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
+    
+    
+      
+        <title>相关系数 - My Resume</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#相关系数" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Resume" class="md-header__button md-logo" aria-label="My Resume" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Resume
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              相关系数
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Resume" class="md-nav__button md-logo" aria-label="My Resume" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Resume
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About Me
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            About Me
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    简历
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%AC%E7%A7%91%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    本科论文
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    航空旅客付费选座意愿识别
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            航空旅客付费选座意愿识别
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/%E8%88%AA%E7%A9%BA%E6%97%85%E5%AE%A2%E4%BB%98%E8%B4%B9%E9%80%89%E5%BA%A7%E6%84%8F%E6%84%BF%E8%AF%86%E5%88%AB/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一、项目分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/%E8%88%AA%E7%A9%BA%E6%97%85%E5%AE%A2%E4%BB%98%E8%B4%B9%E9%80%89%E5%BA%A7%E6%84%8F%E6%84%BF%E8%AF%86%E5%88%AB/%E8%AF%A6%E7%BB%86%E6%96%B9%E6%A1%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二、详细方案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    涉疫地面自动提取
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            涉疫地面自动提取
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/%E5%9F%BA%E4%BA%8EBi-LSTM-CRF%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB%E6%B6%89%E7%96%AB%E5%9C%B0%E5%90%8D%E8%87%AA%E5%8A%A8%E6%8F%90%E5%8F%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    详细方案（Bi-LSTM-CRF）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    岩石荧光区域分割
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            岩石荧光区域分割
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/%E5%B2%A9%E7%9F%B3%E8%8D%A7%E5%85%89%E5%8C%BA%E5%9F%9F%E5%88%86%E5%89%B2/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一、项目分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/%E5%B2%A9%E7%9F%B3%E8%8D%A7%E5%85%89%E5%8C%BA%E5%9F%9F%E5%88%86%E5%89%B2/%E8%AF%A6%E7%BB%86%E6%96%B9%E6%A1%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二、详细方案
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    股市板块多序列预测
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            股市板块多序列预测
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/LSTM%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E2%80%94%E2%80%94%E8%82%A1%E5%B8%82%E6%9D%BF%E5%9D%97%E5%A4%9A%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    详细方案 (LSTM神经网络)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Specialized
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Specialized
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据结构
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            数据结构
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%A6%82%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第一章 概论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E7%BA%BF%E6%80%A7%E8%A1%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第二章 线性表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第三章 栈和队列
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E4%B8%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第四章 串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E4%BA%94%E7%AB%A0%20%E6%95%B0%E7%BB%84%E3%80%81%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%B9%BF%E4%B9%89%E8%A1%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第五章 数组、矩阵与广义表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第六章 树与二叉树
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%9B%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第七章 图
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第八章 排序
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E7%AC%AC%E4%B9%9D%E7%AB%A0%20%E6%9F%A5%E6%89%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构——第九章 查找
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计算机组成原理
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            计算机组成原理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机组成原理——第一章 计算机系统概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E2%80%94%E2%80%94%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%BF%90%E7%AE%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机组成原理——第二章 数据的表示和运算
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机组成原理——第三章 存储系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E2%80%94%E2%80%94%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机组成原理——第四章 指令系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mathematical Modeling
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematical Modeling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    评价模型
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            评价模型
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    层次分析法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TOPSIS%E6%B3%95%EF%BC%88%E4%BC%98%E5%8A%A3%E8%A7%A3%E8%B7%9D%E7%A6%BB%E6%B3%95%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TOPSIS法（优劣解距离法）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    回归模型
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            回归模型
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    回归分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%9E%E5%BD%92%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    回归评价指标
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    聚类模型
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            聚类模型
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%81%9A%E7%B1%BB%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    几种聚类模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    排队论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            排队论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8E%92%E9%98%9F%E8%AE%BA%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    排队论模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    随机森林
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            随机森林
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E6%8F%92%E5%80%BC%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    随机森林插值分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E9%A2%84%E6%B5%8B%E5%88%86%E6%9E%90%EF%BC%88R%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    随机森林预测分析（R）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    神经网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            神经网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E6%9C%AC%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络基本理论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/MLPRegressor%20%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MLPRegressor 神经网络搭建
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    正则化
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            正则化
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%AD%A3%E5%88%99%E5%8C%96%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    正则化模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DA&DM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            DA&DM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    概论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            概论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8C%96%E6%8E%98/%E6%95%B0%E6%8D%AE%E5%8C%96%E8%BF%90%E8%90%A5%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E6%A6%82%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据化运营与数据挖掘概论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    网络爬虫
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            网络爬虫
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8C%96%E6%8E%98/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    网络爬虫基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    特征工程
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            特征工程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8C%96%E6%8E%98/%E6%A0%87%E5%87%86%E5%8C%96%E3%80%81%E8%BD%AC%E5%8C%96%E6%95%B0%E6%8D%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据的标准化与转化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8C%96%E6%8E%98/%E5%90%88%E5%B9%B6%E3%80%81%E6%B8%85%E6%B4%97%E6%95%B0%E6%8D%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据的合并与清洗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OJ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            OJ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    STL库
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            STL库
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STL%E5%BA%93/sort%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    sort自定义排序
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STL%E5%BA%93/STL%E5%BA%93%E2%80%94iterator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    STL库—iterator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STL%E5%BA%93/STL%E5%BA%93%E2%80%94vector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    STL库—vector
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STL%E5%BA%93/STL%E5%BA%93%E2%80%94map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    STL库—map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../STL%E5%BA%93/STL%E5%BA%93%E2%80%94set/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    STL库——set容器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            数论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E6%B3%95/%E9%9C%8D%E7%BA%B3%E6%B3%95%E5%88%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多项式求值——霍纳法则(Horner's rule)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E6%B3%95/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    高斯消元法—求解线性方程组
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    高级数据结构
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            高级数据结构
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E6%B3%95/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    可持久化数据结构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    刷题记录
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            刷题记录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%AE%97%E6%B3%95/PAT%E5%88%B7%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PAT刷题记录（1-16）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-person相关系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Person相关系数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Person相关系数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-总体person相关系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 总体Person相关系数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-样本person相关系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 样本Person相关系数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-对person相关系数的理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 对Person相关系数的理解
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-对相关系数大小解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 对相关系数大小解释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-皮尔逊相关系数进行假设检验" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 皮尔逊相关系数进行假设检验
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-案例一学生的体测样本数据" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 案例一:学生的体测样本数据
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 案例一:学生的体测样本数据">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Matlab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-spss" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 SPSS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3斯皮尔曼spearman相关系数" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.斯皮尔曼spearman相关系数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.斯皮尔曼spearman相关系数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-使用matlab计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 使用matlab计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-斯皮尔曼相关系数假设检验" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 斯皮尔曼相关系数假设检验
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4两个相关系数比较" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.两个相关系数比较
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="相关系数">相关系数<a class="headerlink" href="#相关系数" title="Permanent link">⚓︎</a></h1>
+<h3 id="1-person相关系数">1. Person相关系数<a class="headerlink" href="#1-person相关系数" title="Permanent link">⚓︎</a></h3>
+<p>用来衡量两个变量之间相关性大小指标。</p>
+<p>总体——要考察对象全部个体；样本——从总体中抽取一部分个体；</p>
+<h5 id="11-总体person相关系数">1.1 总体Person相关系数<a class="headerlink" href="#11-总体person相关系数" title="Permanent link">⚓︎</a></h5>
+<p>两组数据X:{X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,...,X<sub>n</sub>}和Y:{Y<sub>1</sub>,Y<sub>2</sub>,Y<sub>3</sub>,...,Y<sub>n</sub>}是总体数据，</p>
+<p>总体均值：</p>
+<p><img alt="image-20220310120337114" src="https://s2.loli.net/2022/03/10/Ix1LR8zgecNQ9SA.png" /></p>
+<p>总体协方差：</p>
+<p><img alt="image-20220310120441711" src="https://s2.loli.net/2022/03/10/QqFIPmGB9sfinVT.png" /></p>
+<p>​   简单理解就是X、Y变化方向一直保持相同（均大于/小于均值），则协方差为正；X、Y变化方向一直相反，协方差为负；X、Y变化方向间相互无规律，那么分子中既有正又有负，那么在累加过程中正负会抵消。</p>
+<p>所以在一定程度上，协方差可以反应X和Y的相关性，但协方差的大小和两个变量的量纲有关，因此不适合做相关性的比较。</p>
+<p>而Person相关系数，就是通过对变量进行标准化在总体协方差基础上消去量纲影响。</p>
+<p>总体Person相关系数：</p>
+<p><img alt="image-20220310120459025" src="https://s2.loli.net/2022/03/10/8vGNLCK4RnWMpac.png" /></p>
+<p>σ<sub>X</sub>(sigma X)是X的标准差：</p>
+<p><img alt="image-20220310120515651" src="https://s2.loli.net/2022/03/10/tQzlRnFS4xhKZUN.png" /></p>
+<p>可证明,</p>
+<ul>
+<li>
+<p>|ρ<sub>XY</sub>|≤1 ;</p>
+</li>
+<li>
+<p>当Y=aX+b时,既X和Y在一条直线上时</p>
+</li>
+</ul>
+<p><img alt="image-20220310120529544" src="https://s2.loli.net/2022/03/10/7qxlcuI5Wsawng2.png" /></p>
+<p>所以皮尔逊反映的是一种<strong>线性相关系数</strong>。</p>
+<h5 id="12-样本person相关系数">1.2 样本Person相关系数<a class="headerlink" href="#12-样本person相关系数" title="Permanent link">⚓︎</a></h5>
+<p>两组数据X:{X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,...,X<sub>n</sub>}和Y:{Y<sub>1</sub>,Y<sub>2</sub>,Y<sub>3</sub>,...,Y<sub>n</sub>}均为调查得到的样本数据，</p>
+<p>样本均值：</p>
+<p><img alt="image-20220310120549916" src="https://s2.loli.net/2022/03/10/HoKq5Zb3Dk1ASUj.png" /></p>
+<p>样本协方差:</p>
+<p><img alt="image-20220310120606357" src="https://s2.loli.net/2022/03/10/ce3QKZLNsl1pAP9.png" /></p>
+<p>样本Person相关系数:</p>
+<p><img alt="image-20220310120628016" src="https://s2.loli.net/2022/03/10/ikFtjLzOwxIDM5Q.png" /></p>
+<p>S<sub>X</sub>(sigma X)是X的样本标准差：</p>
+<p><img alt="image-20220310120636924" src="https://s2.loli.net/2022/03/10/uGgYNs6khZWmeCA.png" /></p>
+<p><strong>关于样本协方差为什么是除以n-1:</strong></p>
+<p>​   我们计算的样本方差，希望它是总体方差的一个无偏估计。</p>
+<p>若除以n,那么样本方程形式如下:</p>
+<p><img alt="image-20220310120655747" src="https://s2.loli.net/2022/03/10/LP7rOz1fdnxoh8A.png" /></p>
+<p>由无偏估计定义：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/WrRlVN87TFGyYhE.png" /></p>
+<p>由上式可以看出如果除以n，那么样本方差比总体方差的值偏小，需要修正，</p>
+<p>将上式简化：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/MB2ItNSlqivQ5fC.png" /></p>
+<p>将样本方差乘一个n/(n-1)进行修正，则：</p>
+<p><img alt="image-20220310120711505" src="https://s2.loli.net/2022/03/10/tS2g34NwkBml1Fd.png" /></p>
+<p>再由无偏估计定义:</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/IpMrNu3DOovZiwt.png" /></p>
+<p>因此修正之后的样本方差的期望是总体方差σ<sup>2</sup>的一个无偏估计,因此要除以n-1。</p>
+<h5 id="13-对person相关系数的理解">1.3 对Person相关系数的理解<a class="headerlink" href="#13-对person相关系数的理解" title="Permanent link">⚓︎</a></h5>
+<p><img alt="" src="https://i.loli.net/2021/02/01/ohceA9H7Vbufvpd.png" /></p>
+<p><img src="https://i.loli.net/2021/02/01/ZpNnE7MSLU8GRbD.png" style="zoom:67%;" /></p>
+<p>​   以上四幅图的皮尔逊相关系数 都为0.816。</p>
+<p>冰淇淋销量与温度间关系：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/sIeVbCtUhZJGKWm.png" /></p>
+<p>​   相关系数计算结果为0。</p>
+<p>并不是所有的任意两个变量都能使用皮尔逊相关系数来计算相关程度指标。</p>
+<p>皮尔逊相关系数只能用来衡量两个变量<strong>线性相关</strong>程度，也就是说，必须先确认两个变量是线性相关的，得到的相关系数才有意义。</p>
+<p>所以需要注意以下4点：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/XmBkng4iuhWb2wJ.png" /></p>
+<ul>
+<li>非线性相关会导致线性相关系数很大;</li>
+</ul>
+<p><img alt="" src="https://i.loli.net/2021/02/01/JsClUA1FYISO9fm.png" /></p>
+<ul>
+<li>离群点对相关系数影响也很大;(上图去除离群点后相关系数为0.98)</li>
+</ul>
+<p><img alt="image-20210201131022464" src="https://i.loli.net/2021/02/01/kcJ8ZPjhuW4XmyH.png" /></p>
+<ul>
+<li>两个变量相关系数很大也不能说明两者相;(上图中X为常数,两者的相关系数只是受到了异常值影响)</li>
+</ul>
+<p><img alt="" src="https://i.loli.net/2021/02/01/sIeVbCtUhZJGKWm.png" /></p>
+<ul>
+<li>相关系数计算结果为0,只能说明不是线性相关,但不能说明两者没有联系,可能会有更复杂的相关关系(非线性相关);</li>
+</ul>
+<p><strong>总结:</strong></p>
+<ul>
+<li>若两个样本本身就是线性相关关系,那么皮尔逊相关系数绝对值越大,相关性越强,反之越弱;</li>
+<li>在不确定两个变量是什么相关的情况下,则不能随便使用皮尔逊相关系数下结论;</li>
+<li>在使用前先画出散点图进行分析;</li>
+</ul>
+<h5 id="14-对相关系数大小解释">1.4 对相关系数大小解释<a class="headerlink" href="#14-对相关系数大小解释" title="Permanent link">⚓︎</a></h5>
+<p><img alt="" src="https://i.loli.net/2021/02/01/5xIzRnEHaywtpKs.png" /></p>
+<table>
+<thead>
+<tr>
+<th>数值</th>
+<th>相关性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.8-1.0</td>
+<td>极强相关性</td>
+</tr>
+<tr>
+<td>0.6-0.8</td>
+<td>强相关性</td>
+</tr>
+<tr>
+<td>0.4-0.6</td>
+<td>中等程度相关</td>
+</tr>
+<tr>
+<td>0.2-0.4</td>
+<td>弱相关</td>
+</tr>
+<tr>
+<td>0.0-0.2</td>
+<td>极弱相关或无相关</td>
+</tr>
+</tbody>
+</table>
+<p>对相关系数的解释没有严格规定,往往依赖于具体的应用背景和目的。</p>
+<h5 id="15-皮尔逊相关系数进行假设检验">1.5 皮尔逊相关系数进行假设检验<a class="headerlink" href="#15-皮尔逊相关系数进行假设检验" title="Permanent link">⚓︎</a></h5>
+<p><strong>Ⅰ  假设检验步骤：</strong></p>
+<p>①确定原假设H<sub>0</sub>和备择假设H<sub>1</sub>；</p>
+<p>②在原假设H<sub>0</sub>成立的条件下，根据要检验的量构造一个分布（正态、t、F、卡方，在构造分布中涉及了很多证明比较复杂）；</p>
+<p>③画出概率密度图；</p>
+<p>④给一个置信水平β，即相信H<sub>0</sub>成立的概率，ρ（a≤统计量≤b）=β（β一般取90%、95%、99%），若β取95%、对应的α则为5%；</p>
+<p>⑤用已知样本数据代入统计量，得到检验值，若检验落在[a,b]内，则无法拒绝原假设，反之拒绝；</p>
+<p><strong>Ⅱ 皮尔逊相关系数进行假设检验：</strong></p>
+<ul>
+<li>假设检验</li>
+</ul>
+<p><em>第一步：</em>当我们计算出一个皮尔逊相关系数r时，我们想检验它是否显著的异于0，那么设定的原假设和备择假设可以为：
+$$
+H_0:r=0 ,H_1:r≠0
+$$
+<em>第二步：</em>在原假设成立的条件下，利用我们要检验的量构造一个符合某一分布的统计量。</p>
+<p>对于皮尔逊相关系数r而言，在<u>满足一定条件</u>下可以构造统计量，
+$$
+t=r\sqrt{\frac{n-2}{1-r^2}}
+$$
+可以证明t是服从自由度为n-2的t分布。</p>
+<p><em>第三步：</em>将我们要检验的这个值带入这个统计量中，可以得到一个特定的值（检验值）。</p>
+<p>​   如果计算的相关系数为0.5，n=30，那么可以得到：
+$$
+t<sup>*=0.5\sqrt{\frac{30-2}{1-0.5</sup>2}}=3.05505
+$$
+<em>第四步：</em>由于我们知道统计量的分布情况，因此我们可以画出该分布的概率密度函数pdf，并给定一个置信水平，根据这个置信水平查表找到临界值，并画出检验统计量的接受域和拒绝域。</p>
+<p>上述统计量服从自由度n-2=30-2=28的t分布，可画出概率密度函数图像：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">%% 假设检验部分</span>
+<span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">4</span><span class="p">;</span>
+<span class="n">y</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">tpdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">28</span><span class="p">);</span><span class="w">  </span><span class="c">%求t分布的概率密度值 28是自由度  </span>
+<span class="nb">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+<span class="nb">grid</span><span class="w"> </span><span class="n">on</span><span class="w">  </span><span class="c">% 在画出的图上加上网格线</span>
+<span class="nb">hold</span><span class="w"> </span><span class="n">on</span><span class="w">  </span><span class="c">% 保留原来的图，以便继续在上面操作</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/KsNoakpyd3OwGHz.png" /></p>
+<p>确定置信水平：90%、95%、99%</p>
+<p>因为要侧双侧水平，所以需要找到覆盖0.95概率部分，</p>
+<p>通过查找t分布表，对应临界值为0.048，可以做出拒绝域</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="o">%</span><span class="n">通过matlab函数查找p分布表</span>
+<span class="n">tinv</span><span class="p">(</span><span class="mf">0.975</span><span class="p">,</span><span class="mi">28</span><span class="p">)</span>    <span class="o">%</span>  <span class="mf">2.0484</span>
+<span class="o">%</span> <span class="n">这个函数是累积密度函数cdf的反函数</span>
+<span class="n">plot</span><span class="p">([</span><span class="o">-</span><span class="mf">2.048</span><span class="p">,</span><span class="o">-</span><span class="mf">2.048</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n">tpdf</span><span class="p">(</span><span class="o">-</span><span class="mf">2.048</span><span class="p">,</span><span class="mi">28</span><span class="p">)],</span><span class="s1">&#39;r-&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">([</span><span class="mf">2.048</span><span class="p">,</span><span class="mf">2.048</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n">tpdf</span><span class="p">(</span><span class="mf">2.048</span><span class="p">,</span><span class="mi">28</span><span class="p">)],</span><span class="s1">&#39;r-&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/WjL8hNRwyJqMGvs.png" /></p>
+<p><em>第五步：</em>查看计算出的检验值落在接受域还是拒绝域,并下结论。</p>
+<p>由于得到的t<sup>*</sup>=3.05505&gt;2.048,所以可以得到结论：</p>
+<p>在95%水平的置信水平上，我们拒绝原假设H<sub>0</sub>:r=0,因此r是显著的不为0。</p>
+<ul>
+<li>P值检验法</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">%% 计算p值</span>
+<span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">4</span><span class="p">;</span>
+<span class="n">y</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">tpdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">28</span><span class="p">);</span>
+<span class="nb">figure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+<span class="nb">grid</span><span class="w"> </span><span class="n">on</span><span class="w"> </span>
+<span class="nb">hold</span><span class="w"> </span><span class="n">on</span>
+<span class="c">% 画线段的方法</span>
+<span class="nb">plot</span><span class="p">([</span><span class="o">-</span><span class="mf">3.055</span><span class="p">,</span><span class="o">-</span><span class="mf">3.055</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n">tpdf</span><span class="p">(</span><span class="o">-</span><span class="mf">3.055</span><span class="p">,</span><span class="mi">28</span><span class="p">)],</span><span class="s">&#39;r-&#39;</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">([</span><span class="mf">3.055</span><span class="p">,</span><span class="mf">3.055</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n">tpdf</span><span class="p">(</span><span class="mf">3.055</span><span class="p">,</span><span class="mi">28</span><span class="p">)],</span><span class="s">&#39;r-&#39;</span><span class="p">)</span>
+<span class="nb">disp</span><span class="p">(</span><span class="s">&#39;该检验值对应的p值为：&#39;</span><span class="p">)</span>
+<span class="nb">disp</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">tcdf</span><span class="p">(</span><span class="mf">3.055</span><span class="p">,</span><span class="mi">28</span><span class="p">))</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="w">  </span><span class="c">%双侧检验的p值要乘以2</span>
+
+<span class="c">% 该检验值对应的p值为：0.0049</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/iNdwVpbA7gjKu2S.png" /></p>
+<p>根据检验值t<sup>*</sup>=3.05505,可以计算对应的P值。</p>
+<p>基本思想：计算单测检验p值→乘以2得到双侧检验p值。</p>
+<ul>
+<li>p值&gt;0.01，说明在99%置信水平无法拒绝原假设；</li>
+<li>p值&gt;0.05，说明在95%置信水平无法拒绝原假设；</li>
+<li>p值&gt;0.10，说明在90%置信水平无法拒绝原假设；</li>
+</ul>
+<p>在本例中，拒绝原假设意味着皮尔逊相关系数显著的异于0。</p>
+<p><strong>Ⅲ 皮尔逊相关系数假设检验条件</strong></p>
+<ul>
+<li>检验数据通常是成对来自于正态分布的总体；</li>
+<li>实验数据之间差距不能太大；</li>
+<li>每组样本之间是独立抽样的；</li>
+</ul>
+<p><strong>Ⅳ 检验数据正态分布</strong></p>
+<p>正态分布JB检验（大样本n&gt;30）</p>
+<p>雅克‐贝拉检验(Jarque‐Bera test)</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/1hKU7QGojLXEyPC.png" /></p>
+<p>偏度和峰度:</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/NpEDR92PaqowAlg.png" /></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">normrnd</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="c">% 生成100*1的随机向量，每个元素是均值为2，标准差为3的正态分布</span>
+<span class="n">skewness</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="c">%偏度</span>
+<span class="n">kurtosis</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="c">%峰度</span>
+</code></pre></div></td></tr></table></div>
+<p>小样本3≤n≤50：Shapiro-wilk检验</p>
+<p>Shapiro‐wilk夏皮洛‐威尔克检验</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/gfyrUsvjQzaA3GZ.png" /></p>
+<p>另一种常见的方法：Q-Q图</p>
+<p>在统计学中，Q‐Q图（Q代表分位数Quantile）是一种通过比较两个概
+率分布的分位数对这两个概率分布进行比较的概率图方法。
+首先选定分位数的对应概率区间集合，在此概率区间上，点(x,y)对应
+于第一个分布的一个分位数x和第二个分布在和x相同概率区间上相同的分
+位数。</p>
+<p>要利用Q‐Q图鉴别样本数据是否近似于正态分布,只需看Q‐Q图上的点
+是否近似地在一条直线附近。（要求数据量非常大）</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">% Q-Q图</span>
+<span class="n">qqplot</span><span class="p">(</span><span class="nb">Test</span><span class="p">(:,</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/qv4pRY5ePaGLw3D.png" /></p>
+<h3 id="2-案例一学生的体测样本数据">2. 案例一:学生的体测样本数据<a class="headerlink" href="#2-案例一学生的体测样本数据" title="Permanent link">⚓︎</a></h3>
+<p>某中学八年级所有女生体测样本数据如下：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/fu6C79zRhEcyKeO.png" /></p>
+<h5 id="21-matlab">2.1 Matlab<a class="headerlink" href="#21-matlab" title="Permanent link">⚓︎</a></h5>
+<p>①导入数据</p>
+<p>这里导入数值矩阵类型,不包含指标名那一列,并命名为Test。</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/nekshJpEGZ3B8zI.png" /></p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/bQ7HwO5UY9NkvG6.png" /></p>
+<p>②描述性统计</p>
+<p>matlab中基本的统计量函数：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/yHUYr3u8FAa4SZf.png" /></p>
+<p>这些函数默认按列计算，若第二个参数为1，则按行计算。</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">%% 统计描述</span>
+<span class="n">MIN</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">min</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w">  </span><span class="c">% 每一列的最小值</span>
+<span class="n">MAX</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">max</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w">   </span><span class="c">% 每一列的最大值</span>
+<span class="n">MEAN</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">mean</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w">  </span><span class="c">% 每一列的均值</span>
+<span class="n">MEDIAN</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">median</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w">  </span><span class="c">%每一列的中位数</span>
+<span class="n">SKEWNESS</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">skewness</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w"> </span><span class="c">%每一列的偏度</span>
+<span class="n">KURTOSIS</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">kurtosis</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w">  </span><span class="c">%每一列的峰度</span>
+<span class="n">STD</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">std</span><span class="p">(</span><span class="nb">Test</span><span class="p">);</span><span class="w">  </span><span class="c">% 每一列的标准差</span>
+<span class="n">RESULT</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="n">MIN</span><span class="p">;</span><span class="n">MAX</span><span class="p">;</span><span class="n">MEAN</span><span class="p">;</span><span class="n">MEDIAN</span><span class="p">;</span><span class="n">SKEWNESS</span><span class="p">;</span><span class="n">KURTOSIS</span><span class="p">;</span><span class="n">STD</span><span class="p">]</span><span class="w">  </span><span class="c">%将这些统计量放到一个矩阵中中表示</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/zCouXdQFel4VHNf.png" /></p>
+<p>每一行从上至下依次为每一列的:最小值、最大值、均值、中位数、偏度、峰度、标准差；</p>
+<p>③计算各列之间的相关系数以及P值</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">%% 计算各列之间的相关系数以及p值</span>
+<span class="p">[</span><span class="n">R</span><span class="p">,</span><span class="n">P</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">corrcoef</span><span class="p">(</span><span class="nb">Test</span><span class="p">)</span>
+<span class="c">% 在EXCEL表格中给数据右上角标上显著性符号吧</span>
+<span class="n">P</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.01</span><span class="w">  </span><span class="c">% 标记3颗星的位置</span>
+<span class="p">(</span><span class="n">P</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.05</span><span class="p">)</span><span class="w"> </span><span class="o">.*</span><span class="w"> </span><span class="p">(</span><span class="n">P</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0.01</span><span class="p">)</span><span class="w">  </span><span class="c">% 标记2颗星的位置</span>
+<span class="p">(</span><span class="n">P</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.1</span><span class="p">)</span><span class="w"> </span><span class="o">.*</span><span class="w"> </span><span class="p">(</span><span class="n">P</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0.05</span><span class="p">)</span><span class="w"> </span><span class="c">% % 标记1颗星的位置</span>
+<span class="c">% 也可以使用Spss操作哦 看我演示R = corrcoef(Test)</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/9HpYjn8Fw4LKo1s.png" /></p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/ZXoYuLv9dePEOwN.png" /></p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/TiBbHIOf6rl1qw8.png" /></p>
+<p>对应P值：</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/rYUjOHEf4qkwvib.png" /></p>
+<p>这里可以通过Excel色阶进行美化:</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/oM42KwY1NgFDUlx.png" /></p>
+<p><img src="https://i.loli.net/2021/02/01/P4SaAVEJh3Fzrck.png" style="zoom:80%;" /></p>
+<p>得到图像:</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/FwBJ9T5HNYWGQRo.png" /></p>
+<p>④JB检验</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">%% 正态分布检验</span>
+<span class="c">% 正态分布的偏度和峰度</span>
+<span class="n">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">normrnd</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w">   </span><span class="c">% 生成100*1的随机向量，每个元素是均值为2，标准差为3的正态分布</span>
+<span class="n">skewness</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">  </span><span class="c">%偏度</span>
+<span class="n">kurtosis</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">  </span><span class="c">%峰度</span>
+<span class="n">qqplot</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c">% 检验第一列数据是否为正态分布</span>
+<span class="p">[</span><span class="n">h</span><span class="p">,</span><span class="n">p</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">jbtest</span><span class="p">(</span><span class="nb">Test</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="p">[</span><span class="n">h</span><span class="p">,</span><span class="n">p</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">jbtest</span><span class="p">(</span><span class="nb">Test</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="mf">0.01</span><span class="p">)</span>
+
+<span class="c">% 用循环检验所有列的数据</span>
+<span class="n">n_c</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">size</span><span class="p">(</span><span class="nb">Test</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span><span class="w">  </span><span class="c">% number of column 数据的列数</span>
+<span class="n">H</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">);</span><span class="w">  </span><span class="c">% 初始化节省时间和消耗</span>
+<span class="n">P</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="nb">i</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="n">n_c</span>
+<span class="w">    </span><span class="p">[</span><span class="n">h</span><span class="p">,</span><span class="n">p</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">jbtest</span><span class="p">(</span><span class="nb">Test</span><span class="p">(:,</span><span class="nb">i</span><span class="p">),</span><span class="mf">0.05</span><span class="p">);</span>
+<span class="w">    </span><span class="n">H</span><span class="p">(</span><span class="nb">i</span><span class="p">)=</span><span class="n">h</span><span class="p">;</span>
+<span class="w">    </span><span class="n">P</span><span class="p">(</span><span class="nb">i</span><span class="p">)=</span><span class="n">p</span><span class="p">;</span>
+<span class="k">end</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="image-20210201214229671" src="https://i.loli.net/2021/02/01/9tqOnjGcwENRv6l.png" /></p>
+<p>当置信水平取95%,输出h等于1时，表示拒绝原假设；(H<sub>0</sub>:随机变量服从正太分布)</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/Im7aqTjO25PRfZN.png" /></p>
+<p>h等于0,p大于显著性水平,则代表不能拒绝原假设</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">% 用循环检验所有列的数据</span>
+<span class="n">n_c</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">size</span><span class="p">(</span><span class="nb">Test</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span><span class="w">  </span><span class="c">% number of column 数据的列数</span>
+<span class="n">H</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">);</span><span class="w">  </span><span class="c">% 初始化节省时间和消耗</span>
+<span class="n">P</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="nb">i</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="n">n_c</span>
+<span class="w">    </span><span class="p">[</span><span class="n">h</span><span class="p">,</span><span class="n">p</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">jbtest</span><span class="p">(</span><span class="nb">Test</span><span class="p">(:,</span><span class="nb">i</span><span class="p">),</span><span class="mf">0.05</span><span class="p">);</span>
+<span class="w">    </span><span class="n">H</span><span class="p">(</span><span class="nb">i</span><span class="p">)=</span><span class="n">h</span><span class="p">;</span>
+<span class="w">    </span><span class="n">P</span><span class="p">(</span><span class="nb">i</span><span class="p">)=</span><span class="n">p</span><span class="p">;</span>
+<span class="k">end</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/7ckzmeBAwO3Ijgf.png" /></p>
+<p>P值全部小于0.05,所以6列数据全部不是正态分布。</p>
+<h5 id="22-spss">2.2 SPSS<a class="headerlink" href="#22-spss" title="Permanent link">⚓︎</a></h5>
+<p>①导入数据</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/qnylf5TzGDeF7Md.png" /></p>
+<p>通过变量视图查看数据类型</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/XtAEeplGuBYFzLK.png" /></p>
+<p>②描述性统计</p>
+<p>[分析]→[描述]</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/a4HVZjkw2vBTNs5.png" /></p>
+<p>③判断变量间是否有线性关系</p>
+<p>[图形]→[旧对话框]→[散点图/点图]→[矩阵散点图]</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/zGChp5Tl3uUJRor.png" /></p>
+<p>④P检验</p>
+<p>数据编辑器→[分析]→[双变量]→[皮尔逊|双尾|标注显著性相关性]</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/crEbpignWsdohZI.png" /></p>
+<h3 id="3斯皮尔曼spearman相关系数">3.斯皮尔曼spearman相关系数<a class="headerlink" href="#3斯皮尔曼spearman相关系数" title="Permanent link">⚓︎</a></h3>
+<p>若没有通过相关性检验,则可以用</p>
+<p>X和Y为两组数据,其斯皮尔曼相关性:
+$$
+r_s=1-\frac{6\sum_{i=1}<sup 2="2">n{d_{i}</sup>}}{n\left( n^2-1 \right)}
+$$
+<img alt="image-20210201220231827" src="https://i.loli.net/2021/02/01/9glDivq1PwO548B.png" /></p>
+<p>一个数的等级,就是将它所在的一列数据按照从小到大排序后,这个数所在位置</p>
+<p><img alt="image-20210201220803392" src="https://i.loli.net/2021/02/01/ykPtSICYvTj2hea.png" /></p>
+<p>注:若数值相同,则它们所在位置取算数平均。</p>
+<p>可证明：r<sub>s</sub>位于-1和1之间。</p>
+<p>所以，斯皮尔曼相关系数被定义为等级之间的皮尔逊相关系数。</p>
+<h5 id="31-使用matlab计算">3.1 使用matlab计算<a class="headerlink" href="#31-使用matlab计算" title="Permanent link">⚓︎</a></h5>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">matlab</span>
+<span class="s">%%</span><span class="w"> </span><span class="s">MATLAB求解皮尔逊相关系数</span>
+<span class="n">RX</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
+<span class="n">RY</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="w"> </span><span class="mf">4.5</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mf">4.5</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
+<span class="n">R</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">corrcoef</span><span class="p">(</span><span class="n">RX</span><span class="p">,</span><span class="n">RY</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p><img alt="" src="https://i.loli.net/2021/02/01/iMZN43mE6QFApoC.png" /></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="o">&#39;</span><span class="w"> </span><span class="c">% 一定要是列向量哦，一撇&#39;表示求转置</span>
+<span class="n">Y</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="mi">6</span><span class="p">]</span><span class="o">&#39;</span>
+<span class="n">coeff</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">corr</span><span class="p">(</span><span class="n">X</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&#39;type&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Spearman&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>对比两种相关系数计算结果:</p>
+<p><img alt="" src="https://i.loli.net/2021/02/01/86JKfWltsXNwGQe.png" /></p>
+<h5 id="32-斯皮尔曼相关系数假设检验">3.2 斯皮尔曼相关系数假设检验<a class="headerlink" href="#32-斯皮尔曼相关系数假设检验" title="Permanent link">⚓︎</a></h5>
+<p>分为小样本和大样本两种情况:</p>
+<ul>
+<li>小样本情况，即𝒏 ≤ 𝟑𝟎时，直接查临界值表即可。</li>
+</ul>
+<p><img alt="" src="https://www.freesion.com/images/669/102860f9e321f042190c4c32622ae465.png" /></p>
+<p><img alt="" src="https://www.freesion.com/images/593/b3e6e111b4c3b54718a3b2a224aa92f1.png" /></p>
+<ul>
+<li>大样本情况下,统计量
+  $$
+  H_0:r_s=0,H_1:r_s\ne 0
+  $$</li>
+</ul>
+<p><img alt="" src="https://i.loli.net/2021/02/01/BFW2wK8I9VvE3Hj.png" /></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">% 直接给出相关系数和p值</span>
+<span class="p">[</span><span class="n">R</span><span class="p">,</span><span class="n">P</span><span class="p">]=</span><span class="n">corr</span><span class="p">(</span><span class="nb">Test</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;type&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Spearman&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="4两个相关系数比较">4.两个相关系数比较<a class="headerlink" href="#4两个相关系数比较" title="Permanent link">⚓︎</a></h3>
+<p>斯皮尔曼相关系数和皮尔逊相关系数选择:</p>
+<p>1.连续数据，正态分布，线性关系，用pearson相关系数是最恰当，当然用
+spearman相关系数也可以， 就是效率没有pearson相关系数高。</p>
+<p>2.上述任一条件不满足，就用spearman相关系数，不能用pearson相关系数。</p>
+<p>3.两个定序数据之间也用spearman相关系数，不能用pearson相关系数。</p>
+<ul>
+<li>定序数据是指仅仅反映观测对象等级、顺序关系的数据，是由定序尺度计量形成的，表现为类别，可以进行排序，属于品质数据。</li>
+<li>例如：优、良、差；
+  我们可以用1表示差、2表示良、3表示优，但请注意，用2除以1得出的2并不代表任何含义。定序数据最重要的意义代表了一组数据中的某种逻辑顺序。</li>
+</ul>
+<p>4.注：斯皮尔曼相关系数的适用条件比皮尔逊相关系数要广，只要数据满足单调关系
+（例如线性函数、指数函数、对数函数等）就能够使用。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/suneann" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<suneann@outlook.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
